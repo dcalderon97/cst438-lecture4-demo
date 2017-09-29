@@ -4,6 +4,10 @@ jobs:
      working_directory: ~/cst438-lecture4-demo
      docker:
        - image: circleci/node:7.10
+     general:
+         branches:
+            only:
+            - unit_tests
      steps:
       - checkout
       - run:
